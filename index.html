@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARK SO EUN PORTFOLIO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background-color: rgb(235, 238, 220);
+        }
+
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .background-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .main {
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            transform: translateY(-50%);
+        }
+
+        /* 네비게이션 */
+        nav {
+            position: absolute;
+            top: 70px;
+            left: 100px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            letter-spacing: 1px;
+            z-index: 10;
+        }
+
+        .logo {
+            font: 700 22px "SansSerif";
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font: 500 16px "SansSerif";
+            transition: opacity 0.3s;
+        }
+
+        .nav-menu a:hover {
+            opacity: 0.7;
+        }
+
+        .center-image {
+            position: absolute;
+            top: 33%;
+            right: 10px;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+
+        .center-image img {
+            animation: center-image 3s infinite;
+        }
+
+        @keyframes center-image {
+            0% {
+                transform: scale3d(1, 1, 1);
+            }
+            10% {
+                transform: scale3d(1.25, 0.75, 1);
+            }
+            20% {
+                transform: scale3d(0.75, 1.25, 1);
+            }
+            30% {
+                transform: scale3d(1.15, 0.85, 1);
+            }
+            40% {
+                transform: scale3d(0.95, 1.05, 1);
+            }
+            50% {
+                transform: scale3d(1.05, 0.95, 1);
+            }
+            50%, 100% {
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        .center-image2 {
+            position: absolute;
+            top: 70%;
+            right: 60px;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+
+        .center-image2 img {
+            animation: center-image2 3s infinite;
+        }
+
+        @keyframes center-image2 {
+            0% {
+                transform: scale3d(1, 1, 1);
+            }
+            10% {
+                transform: scale3d(1.25, 0.75, 1);
+            }
+            20% {
+                transform: scale3d(0.75, 1.25, 1);
+            }
+            30% {
+                transform: scale3d(1.15, 0.85, 1);
+            }
+            40% {
+                transform: scale3d(0.95, 1.05, 1);
+            }
+            50% {
+                transform: scale3d(1.05, 0.95, 1);
+            }
+            50%, 100% {
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+
+        /* 우측 상단 텍스트 */
+        .top-right-text {
+            position: absolute;
+            top: 70px;
+            right: 100px;
+            font: 500 16px "SansSerif";
+            color: #55B74D;
+            letter-spacing: 1px;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 배경 이미지 div -->
+    <div class="background-container">
+        <img src="image/메인페이지.png" alt="background">
+    </div>
+    
+    <div class="main"></div>
+
+    <!-- 네비게이션 -->
+    <nav>
+        <div class="logo">PARK SO EUN PORTFOLIO</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="sub.html">DESIGN</a></li>
+            <li><a href="myself.html">MYSELF</a></li>
+        </ul>
+    </nav>
+
+    <!-- 우측 상단 텍스트 -->
+    <div class="top-right-text">UX/UI DESIGN. 2026</div>
+
+    <!-- 중앙 이미지 영역 -->
+    <div class="center-image"><img src="image/M.png" alt=""></div>
+
+    <div class="center-image2"><img src="image/D.png" alt=""></div>
+
+    
+</body>
+</html>
